@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    --primary: #272822;
+    --secondary: #1E1F1C;
+}
+
+html, body { 
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
