@@ -1,14 +1,14 @@
 <div class="sidebar">
     <div class="sidebar-index">
         <ul>
-            <li><i class='bx bx-menu'></i></li>
-            <li><i class='bx bx-search'></i></li>
-            <li><i class='bx bxl-github' ></i></li>
-            <li><i class='bx bxl-linkedin' ></i></li>
-            <li><i class='bx bx-user-circle' ></i></li>
-            <li><i class='bx bx-envelope'></i></li>
+            <li class="sidebar-item" (click)="panelHidden = !panelHidden"><i class='bx bx-menu'></i></li>
+            <li class="sidebar-item"><i class='bx bx-search'></i></li>
+            <li class="sidebar-item"><a href="#" target="_blank"><i class='bx bxl-github'></i></a></li>
+            <li class="sidebar-item"><a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+            <li class="sidebar-item push-bottom"><i class='bx bx-user-circle'></i></li>
+            <li class="sidebar-item"><i class='bx bx-envelope'></i></li>
         </ul>
     </div>
-    <div class="sidebar-panel">
+    <div class="sidebar-panel" *ngIf="!panelHidden">
     </div>
 </div>
