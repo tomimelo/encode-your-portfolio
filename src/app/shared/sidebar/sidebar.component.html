@@ -1,12 +1,30 @@
 <div class="sidebar">
     <div class="sidebar-index">
         <ul>
-            <li class="sidebar-item" (click)="panelHidden = !panelHidden"><i class='bx bx-menu'></i></li>
-            <li class="sidebar-item"><i class='bx bx-search'></i></li>
-            <li class="sidebar-item"><a href="#" target="_blank"><i class='bx bxl-github'></i></a></li>
-            <li class="sidebar-item"><a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-            <li class="sidebar-item push-bottom"><i class='bx bx-user-circle'></i></li>
-            <li class="sidebar-item"><i class='bx bx-envelope'></i></li>
+            <li class="sidebar-item active" (click)="panelHidden = !panelHidden">
+                <i class='bx bx-menu'></i>
+                <span class="tooltip">Explorer</span>
+            </li>
+            <li class="sidebar-item">
+                <i class='bx bx-search'></i>
+                <span class="tooltip">Search</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                <span class="tooltip">GitHub</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <span class="tooltip">LinkedIn</span>
+            </li>
+            <li class="sidebar-item push-bottom">
+                <i class='bx bx-user-circle'></i>
+                <span class="tooltip">About me</span>
+            </li>
+            <li class="sidebar-item">
+                <i class='bx bx-envelope'></i>
+                <span class="tooltip">Contact</span>
+            </li>
         </ul>
     </div>
     <div class="sidebar-panel" *ngIf="!panelHidden">
