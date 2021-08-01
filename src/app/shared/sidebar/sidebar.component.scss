@@ -7,6 +7,68 @@
     flex: 1;
     width: 200px;
     background-color: var(--secondary);
+
+    .menu-header {
+        color: var(--text);
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 15px;
+        background-color: var(--secondary);
+    }
+
+    .accordions {
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            color: var(--text);
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 13px;
+            background-color: var(--primary);
+            cursor: pointer;
+            
+            &:focus {
+                box-shadow: inset 1px 1px var(--border),
+                            inset -1px -1px var(--border);
+            }
+
+            ic-icon {
+                font-size: 18px;
+                margin: 0 2px;
+            }
+        }
+
+        .accordion-content {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    display: flex;
+                    gap: 5px;
+                    padding: 3px 20px;
+
+                    &:hover {
+                        background-color: var(--primary);
+                    }
+
+                    &.active {
+                        background-color: var(--tertiary);
+                    }
+
+                    a {
+                        color: var(--text);
+                        font-size: 13px;
+                        // margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .sidebar-index {
@@ -17,7 +79,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         align-items: center;
     }
 }
@@ -31,6 +93,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    ic-icon {
+        font-size: 25px;
+    }
 
     &.active {
         color: white;
@@ -60,9 +126,9 @@
         transform: translateY(-50%);
         font-size: 12px;
         padding: 4px 8px;
-        background-color:#414339;
-        border: 1px solid #646252;
-        color: #CCCCCC;
+        background-color: var(--tertiary);
+        border: 1px solid var(--border);
+        color: var(--text);
         text-align: center;
         white-space: nowrap;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -79,7 +145,7 @@
         height: 6px;
         background: inherit;
         transform: rotate(45deg);
-        box-shadow: inset 1px -1px 0 #646252;
+        box-shadow: inset 1px -1px 0 var(--border);
     }
 }
 

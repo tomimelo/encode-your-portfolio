@@ -2,18 +2,20 @@
     <div class="sidebar-index">
         <ul>
             <li class="sidebar-item" [class.active]="!panelHidden" (click)="panelHidden = !panelHidden">
-                <i class='bx bx-menu'></i>
+                <a href="#">
+                    <ic-icon icon="menu"></ic-icon>
+                </a>
                 <span class="tooltip">Explorer</span>
             </li>
             <li class="sidebar-item">
                 <a href="#">
-                    <i class='bx bx-search'></i>
+                    <ic-icon icon="search"></ic-icon>
                 </a>
                 <span class="tooltip">Search</span>
             </li>
             <li class="sidebar-item">
                 <a href="#" target="_blank">
-                    <i class='bx bxl-github'></i>
+                    <ic-icon icon="github"></ic-icon>
                 </a>
                 <span class="tooltip">GitHub</span>
             </li>
@@ -25,18 +27,39 @@
             </li>
             <li class="sidebar-item push-bottom">
                 <a href="#">
-                    <i class='bx bx-user-circle'></i>
+                    <ic-icon icon="account"></ic-icon>
                 </a>
                 <span class="tooltip">About me</span>
             </li>
             <li class="sidebar-item">
                 <a href="#">
-                    <i class='bx bx-envelope'></i>
+                    <ic-icon icon="mail"></ic-icon>
                 </a>
                 <span class="tooltip">Contact</span>
             </li>
         </ul>
     </div>
     <div class="sidebar-panel" *ngIf="!panelHidden">
+        <div class="menu-header">
+            Explorer
+        </div>
+        <div class="accordions">
+            <a class="accordion-header">
+                <ic-icon icon="chevron-down"></ic-icon>
+                Menu
+            </a>
+            <div class="accordion-content">
+                <ul>
+                    <li class="active">
+                        <i class='bx bxl-html5'></i>
+                        <a href="#">index.html</a>
+                    </li>
+                    <li>
+                        <i class='bx bxl-css3'></i>
+                        <a href="#">styles.css</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>

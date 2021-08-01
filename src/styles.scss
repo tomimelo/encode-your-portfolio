@@ -7,6 +7,9 @@
     font-family: Consolas, 'Courier New', monospace;
     --primary: #272822;
     --secondary: #1E1F1C;
+    --tertiary: #414339;
+    --text: #CCCCCC;
+    --border: #646252;
 }
 
 html, body { 
@@ -15,4 +18,16 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+}
+
+ic-icon {
+    display: flex;
+}
+
+.bxl-html5 {
+    color: #E44D26;
+}
+
+.bxl-css3 {
+    color: #42A5F5;
 }

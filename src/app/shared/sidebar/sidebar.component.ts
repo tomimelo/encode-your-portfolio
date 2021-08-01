@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IconService } from '@visurel/iconify-angular';
+import { appIcons } from 'src/app/utils/icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,7 +11,9 @@ export class SidebarComponent implements OnInit {
 
   public panelHidden: boolean = false;
 
-  constructor() { }
+  constructor(iconService: IconService) {
+    iconService.registerAll(appIcons);
+  }
 
   ngOnInit(): void {
   }
