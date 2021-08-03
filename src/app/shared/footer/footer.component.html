@@ -1,3 +1,10 @@
-<div class="footer">
-    
+<div class="footer" [class.active]="footerActive">
+    <div class="head-row">
+        <button (click)="footerActive = !footerActive">
+            <ic-icon [icon]="footerActive ? 'chevron-down' : 'chevron-up'"></ic-icon>
+        </button>
+        <span class="tooltip">{{footerActive ? 'Minimize footer' : 'Restore footer'}}</span>
+    </div>
+    <div class="footer-content">
+    </div>
 </div>

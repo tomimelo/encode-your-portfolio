@@ -1,5 +1,58 @@
 .footer {
     width: 100%;
-    height: 200px;
+    height: 35px;
     background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+        height: 200px;
+    }
+}
+
+.head-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    height: 35px;
+    position: relative;
+
+    button {
+        color: var(--text);
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 2px;
+
+        &:hover {
+            background-color: #373934;
+            border-radius: 4px;
+        }
+
+        &:hover + .tooltip {
+            transition: 100ms all linear;
+            transition-delay: 600ms;
+            opacity: 1;
+        }
+    }
+}
+
+.footer-content {
+    height: 100%;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 12px;
+    padding: 4px 8px;
+    background-color: #292A2D;
+    border: 1px solid #CFD1D4;
+    color: #CFD1D4;
+    text-align: center;
+    white-space: nowrap;
 }

@@ -4,6 +4,7 @@ import githubIcon from '@iconify-icons/codicon/github';
 import accountIcon from '@iconify-icons/codicon/account';
 import mailIcon from '@iconify-icons/codicon/mail';
 import chevronDown from '@iconify-icons/codicon/chevron-down';
+import chevronUp from '@iconify-icons/codicon/chevron-up';
 import chevronRight from '@iconify-icons/codicon/chevron-right';
 
 export const appIcons = {
@@ -13,5 +14,6 @@ export const appIcons = {
   account: accountIcon,
   mail: mailIcon,
   'chevron-down': chevronDown,
+  'chevron-up': chevronUp,
   'chevron-right': chevronRight
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IconService } from '@visurel/iconify-angular';
+import { appIcons } from 'src/app/utils/icons';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  public footerActive: boolean = true;
+
+  constructor(iconService: IconService) {
+    iconService.registerAll(appIcons);
+  }
 
   ngOnInit(): void {
   }
