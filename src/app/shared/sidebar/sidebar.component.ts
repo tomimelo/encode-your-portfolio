@@ -11,20 +11,22 @@ import { appIcons } from 'src/app/utils/icons';
 export class SidebarComponent implements OnInit {
 
   public panelHidden: boolean = false;
-  public accordions: IAccordion[] = [{
-    title: 'Menu',
-    active: true,
-    children: [
-      {
-        icon: "bx bxl-html5",
-        text: "index.html"
-      },
-      {
-        icon: "bx bxl-css3",
-        text: "styles.css"
-      }
-    ]
-  }];
+  public accordions: IAccordion[] = [
+    {
+      title: 'Menu',
+      active: true,
+      children: [
+        {
+          icon: "bx bxl-html5",
+          text: "index.html"
+        },
+        {
+          icon: "bx bxl-css3",
+          text: "styles.css"
+        }
+      ]
+    }
+  ];
 
   constructor(iconService: IconService) {
     iconService.registerAll(appIcons);

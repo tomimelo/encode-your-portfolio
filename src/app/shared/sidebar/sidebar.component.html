@@ -45,8 +45,8 @@
         </div>
         <div class="accordions">
             <ng-container *ngFor="let accordion of accordions">
-                <a class="accordion-header">
-                    <ic-icon icon="chevron-down"></ic-icon>
+                <a class="accordion-header" [class.active]="accordion.active" (click)="accordion.active = !accordion.active">
+                    <ic-icon [icon]="accordion.active ? 'chevron-down' : 'chevron-right'"></ic-icon>
                     {{accordion.title}}
                 </a>
                 <div class="accordion-content">
