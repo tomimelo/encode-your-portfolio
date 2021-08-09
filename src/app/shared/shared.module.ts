@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconModule } from '@visurel/iconify-angular';
+import { CreditsComponent } from './credits/credits.component';
 
 @NgModule({
   declarations: [
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    CreditsComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { IconModule } from '@visurel/iconify-angular';
   ],
   exports: [
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    CreditsComponent
   ]
 })
 export class SharedModule { }

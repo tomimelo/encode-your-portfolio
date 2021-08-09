@@ -6,6 +6,8 @@ import mailIcon from '@iconify-icons/codicon/mail';
 import chevronDown from '@iconify-icons/codicon/chevron-down';
 import chevronUp from '@iconify-icons/codicon/chevron-up';
 import chevronRight from '@iconify-icons/codicon/chevron-right';
+import sourceControl from '@iconify-icons/codicon/source-control';
+import heart from '@iconify-icons/codicon/heart';
 
 export const appIcons = {
   menu: menuIcon,
@@ -15,5 +17,7 @@ export const appIcons = {
   mail: mailIcon,
   'chevron-down': chevronDown,
   'chevron-up': chevronUp,
-  'chevron-right': chevronRight
+  'chevron-right': chevronRight,
+  'source-control': sourceControl,
+  'heart': heart
 }
