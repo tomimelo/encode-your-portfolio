@@ -6,17 +6,41 @@
     flex-direction: column;
 
     &.active {
-        height: 200px;
+        height: 200px; 
+
+        .head-row span {
+            color: white;
+            border-bottom: 1px solid #75715E;
+        }
+
+        .footer-content {
+            overflow: auto;
+        }
     }
 }
 
 .head-row {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 10px 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+    min-height: 35px;
     height: 35px;
     position: relative;
+
+    .tab-button {
+        color: #75715E;
+        cursor: pointer;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &:hover {
+            color: white;
+            border-bottom: 1px solid #75715E;
+        }
+    }
 
     button {
         color: var(--text);
@@ -40,7 +64,36 @@
 }
 
 .footer-content {
+    font-size: 14px;
     height: 100%;
+    color:  #B7B8B7;
+    overflow: hidden;
+    display: flex;
+
+    .footer-body {
+        padding: 10px 20px;
+        cursor: text;
+        width: 100%
+    }
+
+    .footer-links {
+        min-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid var(--tertiary);
+
+        a {
+            color: var(--text);
+            padding: 3px 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &:hover {
+                background-color: #414339;
+            }
+        }
+    }
 }
 
 .tooltip {

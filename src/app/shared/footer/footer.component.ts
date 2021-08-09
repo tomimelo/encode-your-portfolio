@@ -10,6 +10,7 @@ import { appIcons } from 'src/app/utils/icons';
 export class FooterComponent implements OnInit {
 
   public footerActive: boolean = true;
+  public actualYear: number = new Date().getFullYear();
 
   constructor(iconService: IconService) {
     iconService.registerAll(appIcons);

@@ -1,10 +1,28 @@
 <div class="footer" [class.active]="footerActive">
     <div class="head-row">
+        <span class="tab-button" (click)="footerActive = !footerActive">TERMINAL</span>
         <button (click)="footerActive = !footerActive">
             <ic-icon [icon]="footerActive ? 'chevron-down' : 'chevron-up'"></ic-icon>
         </button>
         <span class="tooltip">{{footerActive ? 'Minimize footer' : 'Restore footer'}}</span>
     </div>
     <div class="footer-content">
+        <div class="footer-body">
+            <p>C:\&copy;\{{actualYear}}\Tomas Melone> All rights reserved</p>
+        </div>
+        <div class="footer-links">
+            <a href="">
+                <ic-icon icon="account"></ic-icon>
+                About me
+            </a>
+            <a href="">
+                <ic-icon icon="account"></ic-icon>
+                About me
+            </a>
+            <a href="">
+                <ic-icon icon="account"></ic-icon>
+                About me
+            </a>
+        </div>
     </div>
 </div>
