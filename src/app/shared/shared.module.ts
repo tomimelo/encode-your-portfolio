@@ -4,6 +4,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconModule } from '@visurel/iconify-angular';
 import { CreditsComponent } from './credits/credits.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CreditsComponent } from './credits/credits.component';
   ],
   imports: [
     CommonModule,
-    IconModule
+    IconModule,
+    RouterModule
   ],
   exports: [
     SidebarComponent,

@@ -2,13 +2,13 @@
     <div class="sidebar-index">
         <ul>
             <li class="sidebar-item" [class.active]="!panelHidden" (click)="panelHidden = !panelHidden">
-                <a href="#">
+                <a>
                     <ic-icon icon="menu"></ic-icon>
                 </a>
                 <span class="tooltip">Explorer</span>
             </li>
             <li class="sidebar-item">
-                <a href="#">
+                <a>
                     <ic-icon icon="search"></ic-icon>
                 </a>
                 <span class="tooltip">Search</span>
@@ -51,9 +51,9 @@
                 </a>
                 <div class="accordion-content">
                     <ul>
-                        <li *ngFor="let link of accordion.children">
+                        <li *ngFor="let link of accordion.children" routerLinkActive="active">
                             <i [class]='link.icon'></i>
-                            <a href="#">{{link.text}}</a>
+                            <a [routerLink]="link.routerLink">{{link.text}}</a>
                         </li>
                     </ul>
                 </div>

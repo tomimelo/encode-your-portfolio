@@ -18,7 +18,8 @@ export class SidebarComponent implements OnInit {
       children: [
         {
           icon: "bx bxl-html5",
-          text: "index.html"
+          text: "index.html",
+          routerLink: 'home'
         },
         {
           icon: "bx bxl-css3",
