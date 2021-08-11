@@ -23,7 +23,8 @@ export class SidebarComponent implements OnInit {
         },
         {
           icon: "bx bxl-css3",
-          text: "styles.css"
+          text: "about_me.css",
+          routerLink: 'about-me'
         }
       ]
     }

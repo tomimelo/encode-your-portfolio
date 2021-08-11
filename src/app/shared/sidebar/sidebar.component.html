@@ -52,8 +52,10 @@
                 <div class="accordion-content">
                     <ul>
                         <li *ngFor="let link of accordion.children" routerLinkActive="active">
-                            <i [class]='link.icon'></i>
-                            <a [routerLink]="link.routerLink">{{link.text}}</a>
+                            <a [routerLink]="link.routerLink">
+                                <i [class]='link.icon'></i>
+                                {{link.text}}
+                            </a>
                         </li>
                     </ul>
                 </div>
