@@ -37,7 +37,11 @@ ic-icon {
 }
 
 .bxl-javascript {
-    color: yellow;
+    color: #FFCA28;
+}
+
+.bxs-folder, .bxs-folder-open {
+    color: #90A4AE
 }
 
 .red {
@@ -54,6 +58,8 @@ ic-icon {
 
 .code-button {
     height: 40px;
+    width: fit-content;
+    display: block;
     padding: 10px;
     font-size: 15px;
     background-color: transparent;
