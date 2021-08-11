@@ -18,6 +18,15 @@
     background-color: var(--primary);
 }
 
+.router-content {
+    height: 100%;
+    width: 100%;
+
+    router-outlet {
+        display: none;
+    }
+}
+
 app-footer {
     margin-top: auto;
     border-top: 1px solid var(--tertiary);

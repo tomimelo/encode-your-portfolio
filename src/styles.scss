@@ -10,10 +10,14 @@
     --tertiary: #414339;
     --text: #CCCCCC;
     --border: #646252;
+    --red: #F93147;
+    --light-blue: #66D9EF;
+    --green: #A6E22E;
 }
 
 html, body { 
     height: 100%;
+    color: white;
 }
 
 html {
@@ -30,4 +34,30 @@ ic-icon {
 
 .bxl-css3 {
     color: #42A5F5;
+}
+
+.red {
+    color: var(--red);
+}
+
+.green {
+    color: var(--green);
+}
+
+.light-blue {
+    color: var(--light-blue);
+}
+
+.code-button {
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    border: 1px solid #75715E;
+
+    &:hover {
+        background-color: var(--tertiary);
+    }
 }
