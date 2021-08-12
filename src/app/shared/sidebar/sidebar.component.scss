@@ -215,4 +215,21 @@
         flex: 1;
         display: block;
     }
+    
+    .sidebar-panel .accordions {
+        .accordion-header {
+            height: auto;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .accordion-content ul li {
+            height: auto;
+            padding: 5px;
+    
+            a {
+                font-size: 16px;
+            }
+        }
+    }
 }
