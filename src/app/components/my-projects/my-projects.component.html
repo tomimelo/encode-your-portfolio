@@ -1,1 +1,17 @@
-<p>my-projects works!</p>
+<div class="page-container">
+    <h2>My <span class="red">projects</span></h2>
+    <div class="projects-container">
+        <div class="code-card" *ngFor="let project of projects">
+            <div class="code-card-header">
+                <h4>{{project.title}}</h4>
+            </div>
+            <img class="code-card-image" [src]="project.img" alt="Project Image">
+            <div class="code-card-content">
+                <p>{{project.description}}</p>
+            </div>
+            <div class="code-card-footer">
+                <button class="code-button">View more</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -45,10 +45,9 @@ html {
 
 .page-container {
     min-height: 100%;
+    padding: 30px;
     display: flex;
     gap: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
 ic-icon {
@@ -91,6 +90,7 @@ ic-icon {
     background-color: #75715E;
     color: #EDFFE8;
     cursor: pointer;
+    border: none;
 
     &:hover {
         background-color: #8D8871;
@@ -98,7 +98,7 @@ ic-icon {
 }
 
 .code-card {
-    padding: 20px 10px;
+    padding: 10px;
     background-color: #2D2E29;
     color: var(--text);
     border: 1px solid #75715E;
@@ -107,6 +107,7 @@ ic-icon {
 .code-card-header {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .code-card-divider {
@@ -115,6 +116,12 @@ ic-icon {
     width: 50%;
 }
 
+.code-card-image {
+    object-fit: cover;
+    width: calc(100% + 20px);
+    margin: 0 -10px 10px -10px;
+}
+
 .code-card-content {
-    text-align: center;
+    margin-bottom: 10px;
 }

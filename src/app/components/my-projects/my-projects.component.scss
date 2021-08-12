@@ -1,0 +1,20 @@
+.page-container {
+    flex-direction: column;
+
+    & > h2 {
+        font-size: 40px;
+    }
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+}
+
+.code-card {
+    width: 240px;
+}
+
+.code-card-content {
+    font-size: 14px;
+}
