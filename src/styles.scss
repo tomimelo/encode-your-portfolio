@@ -14,13 +14,13 @@
     --light-blue: #66D9EF;
     --green: #A6E22E;
     scrollbar-width: 15px;
-    scrollbar-color: #474844 transparent;
+    scrollbar-color: #474844 var(--primary);
     &::-webkit-scrollbar {
         width: 15px;
     }
     
     &::-webkit-scrollbar-track {
-        background: transparent;
+        background: var(--primary);
         border-left: 1px solid var(--tertiary);
     }
     
