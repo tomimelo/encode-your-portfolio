@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" [class.active]="!panelHidden">
     <div class="sidebar-index">
         <ul>
             <li class="sidebar-item" [class.active]="!panelHidden" (click)="panelHidden = !panelHidden">
@@ -63,4 +63,5 @@
             
         </div>
     </div>
+    <div class="sidebar-overlay" (click)="panelHidden = true"></div>
 </div>
