@@ -30,3 +30,17 @@ span {
         font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .web-credits {
+        justify-content: center;
+        
+        span:first-child {
+            display: none;
+        }
+
+        span:last-child {
+            display: none;
+        }
+    }
+}
