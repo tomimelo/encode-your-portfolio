@@ -146,3 +146,25 @@ input, textarea {
         color: #82837E;
     }
 }
+
+.media-links {
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--tertiary);
+
+    .clickable-link {
+        &:hover {
+            background-color: #414339;
+        }
+    }
+
+    a, li {
+        color: var(--text);
+        padding: 3px 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+    }
+}
