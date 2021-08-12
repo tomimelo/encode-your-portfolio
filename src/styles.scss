@@ -70,6 +70,10 @@ ic-icon {
     color: #90A4AE
 }
 
+.bxs-file {
+    color: #42A5F5;
+}
+
 .red {
     color: var(--red);
 }
@@ -82,7 +86,7 @@ ic-icon {
     color: var(--light-blue);
 }
 
-.code-button {
+button, .code-button {
     width: fit-content;
     display: block;
     padding: 5px 10px;
@@ -97,31 +101,48 @@ ic-icon {
     }
 }
 
-.code-card {
+.card {
     padding: 10px;
     background-color: #2D2E29;
     color: var(--text);
     border: 1px solid #75715E;
 }
 
-.code-card-header {
+.card-header {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.code-card-divider {
+.card-divider {
     border: 1px solid #75715E;
     margin: 20px auto;
     width: 50%;
 }
 
-.code-card-image {
+.card-image {
     object-fit: cover;
     width: calc(100% + 20px);
     margin: 0 -10px 10px -10px;
 }
 
-.code-card-content {
+.card-content {
     margin-bottom: 10px;
+}
+
+input, textarea {
+    background-color: var(--tertiary);
+    border: none;
+    outline: 0;
+    color: #BBBBBA;
+    // height: 25px;
+    padding: 5px;
+
+    &:focus {
+        outline: 1px solid #75715E;
+    }
+
+    &::placeholder {
+        color: #82837E;
+    }
 }

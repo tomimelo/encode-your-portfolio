@@ -30,6 +30,11 @@ export class SidebarComponent implements OnInit {
           icon: "bx bxl-javascript",
           text: "my_projects.js",
           routerLink: 'my-projects'
+        },
+        {
+          icon: "bx bxs-file",
+          text: "contact.txt",
+          routerLink: 'contact'
         }
       ]
     }

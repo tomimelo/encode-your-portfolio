@@ -1,16 +1,16 @@
 <div class="page-container">
     <h2>My <span class="red">projects</span></h2>
     <div class="projects-container">
-        <div class="code-card" *ngFor="let project of projects">
-            <div class="code-card-header">
+        <div class="card" *ngFor="let project of projects">
+            <div class="card-header">
                 <h4>{{project.title}}</h4>
             </div>
-            <img class="code-card-image" [src]="project.img" alt="Project Image">
-            <div class="code-card-content">
+            <img class="card-image" [src]="project.img" alt="Project Image">
+            <div class="card-content">
                 <p>{{project.description}}</p>
             </div>
-            <div class="code-card-footer">
-                <button class="code-button">View more</button>
+            <div class="card-footer">
+                <button>View more</button>
             </div>
         </div>
     </div>
