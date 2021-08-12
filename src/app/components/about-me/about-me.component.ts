@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IconService } from '@visurel/iconify-angular';
+import { appIcons } from 'src/app/utils/icons';
 
 @Component({
   selector: 'app-about-me',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private iconService: IconService) {
+    iconService.registerAll(appIcons);
+  }
 
   ngOnInit(): void {
   }

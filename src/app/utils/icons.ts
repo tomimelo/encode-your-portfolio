@@ -8,6 +8,8 @@ import chevronUp from '@iconify-icons/codicon/chevron-up';
 import chevronRight from '@iconify-icons/codicon/chevron-right';
 import sourceControl from '@iconify-icons/codicon/source-control';
 import heart from '@iconify-icons/codicon/heart';
+import serverProcess from '@iconify-icons/codicon/server-process';
+import tools from '@iconify-icons/codicon/tools';
 
 export const appIcons = {
   menu: menuIcon,
@@ -19,5 +21,7 @@ export const appIcons = {
   'chevron-up': chevronUp,
   'chevron-right': chevronRight,
   'source-control': sourceControl,
-  'heart': heart
+  'heart': heart,
+  'server-process': serverProcess,
+  'tools': tools
 }

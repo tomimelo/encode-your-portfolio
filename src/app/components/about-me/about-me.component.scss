@@ -1,0 +1,52 @@
+.page-container {
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.personal-info {
+    max-width: 800px;
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+    }
+}
+
+.developer-kit {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.code-card {
+    width: 200px;
+}
+
+.code-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    ic-icon {
+        font-size: 40px;
+    }
+}
+
+.code-card-content ul {
+    line-height: 30px;
+}

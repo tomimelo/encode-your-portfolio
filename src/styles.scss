@@ -24,6 +24,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.page-container {
+    min-height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
 ic-icon {
     display: flex;
 }
@@ -57,17 +65,37 @@ ic-icon {
 }
 
 .code-button {
-    height: 40px;
     width: fit-content;
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 15px;
-    background-color: transparent;
-    color: var(--text);
+    background-color: #75715E;
+    color: #EDFFE8;
     cursor: pointer;
-    border: 1px solid #75715E;
 
     &:hover {
-        background-color: var(--tertiary);
+        background-color: #8D8871;
     }
+}
+
+.code-card {
+    padding: 20px 10px;
+    background-color: #2D2E29;
+    color: var(--text);
+    border: 1px solid #75715E;
+}
+
+.code-card-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code-card-divider {
+    border: 1px solid #75715E;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.code-card-content {
+    text-align: center;
 }
