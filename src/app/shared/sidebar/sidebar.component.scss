@@ -57,7 +57,7 @@
             flex-direction: column;
             max-height: 0;
             overflow: hidden;
-            transition: all 200ms ease;
+            transition: opacity 200ms ease;
 
             ul {
                 display: flex;

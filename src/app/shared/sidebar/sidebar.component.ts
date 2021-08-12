@@ -10,7 +10,7 @@ import { appIcons } from 'src/app/utils/icons';
 })
 export class SidebarComponent implements OnInit {
 
-  public panelHidden: boolean = false;
+  public panelHidden: boolean = true;
   public accordions: IAccordion[] = [
     {
       title: 'Menu',

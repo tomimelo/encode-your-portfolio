@@ -56,7 +56,7 @@
         }
 
         &:hover + .tooltip {
-            transition: 100ms all linear;
+            transition: opacity 100ms linear;
             transition-delay: 600ms;
             visibility: visible;
             opacity: 1;
