@@ -57,7 +57,7 @@
             flex-direction: column;
             max-height: 0;
             overflow: hidden;
-            transition: opacity 200ms ease;
+            transition: max-height 200ms ease;
 
             ul {
                 display: flex;
@@ -68,6 +68,13 @@
 
                     &:hover {
                         background-color: var(--primary);
+                    }
+
+                    &:hover + .simple-tooltip {
+                        transition: var(--tooltip-transition);
+                        transition-delay: var(--tooltip-delay);
+                        visibility: visible;
+                        opacity: 1;
                     }
 
                     &.active {
@@ -87,7 +94,20 @@
                         display: flex;
                         align-items: center;
                         gap: 5px;
+                        
+                        span {
+                            white-space: nowrap;
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
                     }
+                }
+
+                .simple-tooltip {
+                    left: 150px;
+                    visibility: hidden;
+                    opacity: 0;
                 }
             }
         }
@@ -141,42 +161,27 @@
         color: white;
     }
 
-    &:hover .tooltip {
-        transition: 100ms all linear;
-        transition-delay: 600ms;
+    &:hover .arrow-tooltip {
+        transition: var(--tooltip-transition);
+        transition-delay: var(--tooltip-delay);
         visibility: visible;
         opacity: 1;
     }
 
-    .tooltip {
+    .arrow-tooltip {
         visibility: hidden;
         opacity: 0;
-        position: absolute;
         left: 54px;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 12px;
-        padding: 4px 8px;
-        background-color: var(--tertiary);
-        border: 1px solid var(--border);
-        color: var(--text);
-        text-align: center;
-        white-space: nowrap;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .tooltip::after {
-        content: "";
-        position: absolute;
+    .arrow-tooltip::after {
         margin-top: -3px;
         margin-right: -2px;
         top: 50%;
         right: 100%;
-        width: 6px;
-        height: 6px;
-        background: inherit;
         transform: rotate(45deg);
-        box-shadow: inset 1px -1px 0 var(--border);
     }
 }
 
@@ -185,7 +190,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .tooltip {
+    .arrow-tooltip, .simple-tooltip {
         display: none;
     }
 

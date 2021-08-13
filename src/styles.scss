@@ -13,6 +13,8 @@
     --red: #F93147;
     --light-blue: #66D9EF;
     --green: #A6E22E;
+    --tooltip-transition: opacity 100ms linear;
+    --tooltip-delay: 600ms;
     scrollbar-width: 15px;
     scrollbar-color: #474844 var(--primary);
     &::-webkit-scrollbar {
@@ -170,6 +172,38 @@ input, textarea {
     }
 }
 
-.tooltip {
+.simple-tooltip {
+    position: absolute;
+    font-size: 12px;
+    padding: 4px 8px;
+    background-color: #292A2D;
+    border: 1px solid #CFD1D4;
+    color: #CFD1D4;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.arrow-tooltip {
+    position: absolute;
+    font-size: 12px;
+    padding: 4px 8px;
+    background-color: var(--tertiary);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-tooltip::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: inherit;
+    box-shadow: inset 1px -1px 0 var(--border);
+}
+
+.arrow-tooltip, .simple-tooltip {
     z-index: 100;
 }

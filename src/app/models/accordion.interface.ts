@@ -7,5 +7,6 @@ export interface IAccordion {
 interface IAccordionChildren {
     icon: string,
     text: string,
-    routerLink?: string
+    url?: string,
+    external?: boolean
 }

@@ -56,9 +56,9 @@
             border-radius: 4px;
         }
 
-        &:hover + .tooltip {
-            transition: opacity 100ms linear;
-            transition-delay: 600ms;
+        &:hover + .simple-tooltip {
+            transition: var(--tooltip-transition);
+            transition-delay: var(--tooltip-delay);
             visibility: visible;
             opacity: 1;
         }
@@ -87,17 +87,9 @@
     }
 }
 
-.tooltip {
+.simple-tooltip {
     opacity: 0;
     visibility: hidden;
-    position: absolute;
     right: 10px;
     top: -20px;
-    font-size: 12px;
-    padding: 4px 8px;
-    background-color: #292A2D;
-    border: 1px solid #CFD1D4;
-    color: #CFD1D4;
-    text-align: center;
-    white-space: nowrap;
 }

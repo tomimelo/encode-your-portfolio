@@ -5,37 +5,37 @@
                 <a>
                     <ic-icon icon="menu"></ic-icon>
                 </a>
-                <span class="tooltip">Explorer</span>
+                <span class="arrow-tooltip">Explorer</span>
             </li>
             <li class="sidebar-item">
                 <a>
                     <ic-icon icon="search"></ic-icon>
                 </a>
-                <span class="tooltip">Search</span>
+                <span class="arrow-tooltip">Search</span>
             </li>
             <li class="sidebar-item">
                 <a href="#" target="_blank">
                     <ic-icon icon="github"></ic-icon>
                 </a>
-                <span class="tooltip">GitHub</span>
+                <span class="arrow-tooltip">GitHub</span>
             </li>
             <li class="sidebar-item">
                 <a href="#" target="_blank">
                     <i class='bx bxl-linkedin'></i>
                 </a>
-                <span class="tooltip">Linkedin</span>
+                <span class="arrow-tooltip">Linkedin</span>
             </li>
             <li class="sidebar-item push-bottom" routerLinkActive="active">
                 <a routerLink="about-me">
                     <ic-icon icon="account"></ic-icon>
                 </a>
-                <span class="tooltip">About me</span>
+                <span class="arrow-tooltip">About me</span>
             </li>
             <li class="sidebar-item" routerLinkActive="active">
                 <a routerLink="contact">
                     <ic-icon icon="mail"></ic-icon>
                 </a>
-                <span class="tooltip">Contact</span>
+                <span class="arrow-tooltip">Contact</span>
             </li>
         </ul>
     </div>
@@ -51,12 +51,21 @@
                 </a>
                 <div class="accordion-content">
                     <ul>
-                        <li *ngFor="let link of accordion.children" routerLinkActive="active">
-                            <a [routerLink]="link.routerLink">
-                                <i [class]='link.icon'></i>
-                                {{link.text}}
-                            </a>
-                        </li>
+                        <div *ngFor="let link of accordion.children">
+                            <li  routerLinkActive="active">
+                                <a *ngIf="!link.external else externalLink" [routerLink]="link.url">
+                                    <i [class]='link.icon'></i>
+                                    <span>{{link.text}}</span>
+                                </a>
+                                <ng-template #externalLink>
+                                    <a href="{{link.url}}" target="_blank">
+                                        <i [class]='link.icon'></i>
+                                        <span>{{link.text}}</span>
+                                    </a>
+                                </ng-template>
+                            </li>
+                            <span class="simple-tooltip">{{link.text}}</span>
+                        </div>
                     </ul>
                 </div>
             </ng-container>
