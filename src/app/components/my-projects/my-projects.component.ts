@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProject } from 'src/app/models/project.interface';
 
 @Component({
   selector: 'app-my-projects',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyProjectsComponent implements OnInit {
 
-  public projects: any[] = [
+  public projects: IProject[] = [
     {
       title: "Project A",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat lorem sed dui eleifend luctus...",
