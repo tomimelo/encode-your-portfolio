@@ -27,3 +27,40 @@
         resize: none;
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    .card-content {
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .media-links {
+        border: none;
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: repeat(5, auto);
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .card {
+        min-width: 100%;
+    }
+
+    .media-links {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .media-links {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .media-links {
+        display: flex;
+    }
+}

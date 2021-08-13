@@ -18,3 +18,28 @@
 .avatar {
     width: 250px;
 }
+
+@media only screen and (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .main-buttons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .avatar {
+        width: 200px;
+    }
+
+    .text-content h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+}

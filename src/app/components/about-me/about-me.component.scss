@@ -50,3 +50,14 @@
 .card-content ul {
     line-height: 30px;
 }
+
+@media only screen and (max-width: 540px) {
+    .personal-info h2 {
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
