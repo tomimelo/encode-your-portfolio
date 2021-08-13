@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
   public footerActive: boolean = false;
   public actualYear: number = new Date().getFullYear();
 
-  constructor(iconService: IconService) {
+  constructor(private iconService: IconService) {
     iconService.registerAll(appIcons);
   }
 
