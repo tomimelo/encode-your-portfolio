@@ -6,10 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IconModule } from '@visurel/iconify-angular';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './components/home/home.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { MyProjectsComponent } from './components/my-projects/my-projects.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
