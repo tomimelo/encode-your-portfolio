@@ -9,7 +9,7 @@
 }
 
 .card {
-    min-width: 750px;
+    width: min(750px, 100%);
 }
 
 .card-content {
@@ -38,29 +38,6 @@
         border: none;
         display: grid;
         column-gap: 10px;
-        grid-template-columns: repeat(5, auto);
-    }
-}
-
-@media only screen and (max-width: 870px) {
-    .card {
-        min-width: 100%;
-    }
-
-    .media-links {
-        grid-template-columns: repeat(3, auto);
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .media-links {
-        grid-template-columns: repeat(2, auto);
-    }
-}
-
-
-@media only screen and (max-width: 375px) {
-    .media-links {
-        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
     }
 }
