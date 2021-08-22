@@ -21,7 +21,7 @@
     <a href="https://github.com/tomimelo/encode-your-portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/tomimelo/encode-your-portfolio">View Demo</a>
+    <a href="https://encode-your-portfolio.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/tomimelo/encode-your-portfolio/issues">Report Bug</a>
     ·
@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/tomimelo/encode-your-portfolio)
+[![Product Name Screen Shot][product-screenshot]](https://encode-your-portfolio.vercel.app/)
 
 If you're a developer and want to have a portfolio that stands out from the rest you're on the right place. There are many templates to create your portfolio online and that makes all end up being the same. I want to create a portfolio with something special, and as a developer that spent too much time on Visual Studio Code I thought this is the best way. Encode Your Portfolio is full responsive.
 
