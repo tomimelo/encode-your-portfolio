@@ -2,26 +2,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    & > h2 {
-        font-size: 40px;
-    }
 }
 
 .card {
-    width: min(750px, 100%);
+    width: min(47em, 100%);
 }
 
 .card-content {
     display: flex;
-    gap: 10px;
+    gap: 0.8em;
 }
 
 .form-container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.8em;
 
     textarea {
         resize: none;
@@ -30,14 +26,14 @@
 
 @media only screen and (max-width: 1080px) {
     .card-content {
-        gap: 30px;
+        gap: 2em;
         flex-direction: column-reverse;
     }
 
     .media-links {
         border: none;
         display: grid;
-        column-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+        column-gap: 0.8em;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 10em), 1fr));
     }
 }
