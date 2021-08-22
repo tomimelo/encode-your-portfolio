@@ -61,13 +61,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/tomimelo/encode-your-portfolio)
 
 If you're a developer and want to have a portfolio that stands out from the rest you're on the right place. There are many templates to create your portfolio online and that makes all end up being the same. I want to create a portfolio with something special, and as a developer that spent too much time on Visual Studio Code I thought this is the best way. Encode Your Portfolio is full responsive.
 
 You may suggest changes and I'll be adding them in the future.
 
-Thanks to Camila Nanni who helped me with the responsive design!
+Thanks to Camila Nanni who helped me with the responsive design and Camila Melone for the awesome drawing of me!
 
 ### Built With
 
@@ -127,14 +127,15 @@ Enjoy!
 <!-- CONTACT -->
 ## Contact
 
-Tomás Melone - email
+[Tomás Melone](https://linkedin.com/in/tomasmelone)
 
 Project Link: [https://github.com/tomimelo/encode-your-portfolio](https://github.com/tomimelo/encode-your-portfolio)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Camila Nanni (UX/UI Designer)](https://example.com)
+* [Camila Nanni (UX/UI Designer)](https://www.linkedin.com/in/camilananni/)
+* [Camila Melone (Digital artist)](https://www.instagram.com/almaa_bm/)
 * [Iconify (codicons)](https://icon-sets.iconify.design/codicon/)
 * [Boxicons](https://boxicons.com/)
 * [README](https://github.com/othneildrew/Best-README-Template) template by @othneildrew
